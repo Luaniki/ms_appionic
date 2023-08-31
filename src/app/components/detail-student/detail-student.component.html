@@ -1,0 +1,21 @@
+<ion-list>
+  <ion-item>
+    <ion-note slot="start">nombre:</ion-note>
+    <ion-label>{{student.firstname}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-note slot="start">apellido:</ion-note>
+    <ion-label>{{student.lastname}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-note slot="start">edad:</ion-note>
+    <ion-label>{{student.age}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-note slot="start">curso:</ion-note>
+    <ion-label>{{student.course}}</ion-label>
+  </ion-item>
+
+    <ion-button (click)="back()">Volver</ion-button>
+
+</ion-list>
