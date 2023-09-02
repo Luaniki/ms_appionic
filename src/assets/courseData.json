@@ -1,0 +1,53 @@
+[
+    {
+      "cod": "c0001",
+      "name": "Programación avanzada"
+    },
+    {
+      "cod": "c0002",
+      "name": "Programación básica"
+    },
+    {
+      "cod": "c0003",
+      "name": "Programación avanzada"
+    },
+    {
+      "cod": "c0004",
+      "name": "Taller de diseño"
+    },
+    {
+      "cod": "c0005",
+      "name": "Calculo I"
+    },
+    {
+      "cod": "c0006",
+      "name": "Calculo II"
+    },
+    {
+      "cod": "c0007",
+      "name": "Ing. software I"
+    },
+    {
+      "cod": "c0008",
+      "name": "Ing. software II"
+    },
+    {
+      "cod": "c0009",
+      "name": "Deporte formativo"
+    },
+
+    {
+      "cod": "c0010",
+      "name": "Electiva I"
+    },
+
+    {
+      "cod": "c0011",
+      "name": "Electiva I"
+    },
+
+    {
+      "cod": "c0012",
+      "name": "Int. Artificial"
+    }
+  ]

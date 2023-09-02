@@ -12,6 +12,8 @@
   </ion-header>
 
   <div id="container">
+    <app-detail-student (sendList)="receiveList($event)"></app-detail-student>
+    
     <ion-button (click)="onClickGoCourses()">Ir a Cursos</ion-button>
   </div>
 

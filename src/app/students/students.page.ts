@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { DetailStudentComponent } from '../components/detail-student/detail-student.component';
-import { Student } from '../models/student.model';
+import { Student } from '../models/student.interface';
 
 @Component({
   selector: 'app-students',
@@ -15,25 +15,9 @@ import { Student } from '../models/student.model';
 })
 export class StudentsPage implements OnInit {
 
+  listE: Array<Student> = [];
+
   constructor(private router:Router) { }
-
-  /*Students: Student[] = [
-    {firstname: 'Marco Antonio', lastname: 'Parra', age: 26,  course:'Electiva I'},
-    {firstname: 'Marco Antonio', lastname: 'Jimenez', age: 60,  course:'Programación avanzada'},
-    {firstname: 'César', lastname: 'Calvo', age: 46, course:'Int. Artificial'},
-    {firstname: 'Juan Esteban', lastname: 'Crespo', age: 34, course:'Programación básica'}
-  ];
-  studentSelected!:Student;
-  showDetail:boolean = false;
-  
-  onDetailBtn(item: Student){
-    this.studentSelected = item;
-    this.showDetail = true;
-  }
-
-  backDetail(value:boolean):void {
-    this.showDetail = value;
-  }*/
 
   ngOnInit() {
   }
@@ -42,5 +26,7 @@ export class StudentsPage implements OnInit {
     this.router.navigateByUrl('courses');
   }
 
-
+  receiveList(list:Array<Student>):void{
+    this.listE = list;
+  }
 }
